@@ -1,5 +1,4 @@
 export const debounce = (func: Function, time: number) => {
-	// @ts-ignore
 	let timer: NodeJS.Timeout
 
 	return function (...args) {
