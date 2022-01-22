@@ -32,13 +32,15 @@ const Header: FC = () => {
 						layout="intrinsic"
 					/>
 					<span className="text-2xl font-bold font-sans tracking-wide ml-2">
-						Converter
+						Convertor
 					</span>
 				</a>
 			</Link>
 			<button
 				className="w-[30px] h-[30px] transition duration-500 ease-in-out rounded-md border-2 p-1 border-black-100 dark:border-white-100 text-black-100 dark:text-white-100 bg-transparent flex align-middle justify-center items-center"
 				onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+				data-splitbee-event={`Toggle Theme to ${theme}`}
+				data-splitbee-event-type="Button click"
 			>
 				{theme === 'dark' ? (
 					<svg

@@ -77,6 +77,8 @@ const Home: FC = () => {
 								accept="video/*"
 								onChange={(event) => setVideo(event.target.files.item(0))}
 								className="block mx-auto w-full sm:w-3/4 border-2 p-0.5 border-black-100 dark:border-white-100 rounded-md text-slate-500  file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-cyan-100 dark:file:bg-cyan-900 file:text-white-200 my-8 dark:file:text-white-100 cursor-pointer"
+								data-splitbee-event="Video input"
+								data-splitbee-event-type="Button click"
 							/>
 						</div>
 					)}
@@ -178,6 +180,8 @@ const Home: FC = () => {
 								disabled={ready && !converted && !file}
 								className="bg-cyan-100 text-white-200 dark:text-white-100 disabled:cursor-not-allowed disabled:bg-white-600 disabled:text-white-100 font-medium font-sans px-4 rounded-md py-2 my-4"
 								onClick={convertFileType}
+								data-splitbee-event="Video convert"
+								data-splitbee-event-type="Button click"
 							>
 								Convert
 							</button>
@@ -211,6 +215,8 @@ const Home: FC = () => {
 								}.${fileType}`}
 								href={URL.createObjectURL(file)}
 								className="bg-cyan-100 text-white-200 dark:text-white-100 flex gap-1 justify-center align-middle items-center font-medium font-sans px-4 rounded-md py-2 my-4"
+								data-splitbee-event="Video download"
+								data-splitbee-event-type="Button click"
 							>
 								<span>Download</span>
 								<span>

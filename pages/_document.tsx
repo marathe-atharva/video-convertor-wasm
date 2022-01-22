@@ -89,7 +89,7 @@ export default class MyDocument extends Document {
 					<meta name="theme-color" content="#32ADE6" />
 
 					{/* Splitbee Analytics Tag */}
-					{/* <script async src="https://cdn.splitbee.io/sb.js"></script> */}
+					<script async src="https://cdn.splitbee.io/sb.js"></script>
 				</Head>
 				<body>
 					<Main />
