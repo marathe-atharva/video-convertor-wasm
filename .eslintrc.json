@@ -1,3 +1,31 @@
 {
-  "extends": "next/core-web-vitals"
+	"root": true,
+	"extends": ["next/core-web-vitals", "eslint:recommended"],
+	"ignorePatterns": ["node_modules/*", ".next/*"],
+	"rules": {
+		"import/order": [
+			"error",
+			{
+				"groups": [
+					"builtin",
+					"external",
+					"internal",
+					["parent", "sibling", "object", "index"]
+				],
+				"pathGroups": [
+					{
+						"pattern": "react",
+						"group": "external",
+						"position": "before"
+					}
+				],
+				"pathGroupsExcludedImportTypes": ["react"],
+				"newlines-between": "never",
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				}
+			}
+		]
+	}
 }

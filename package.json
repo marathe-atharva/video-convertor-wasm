@@ -1,19 +1,39 @@
 {
-  "name": "vid-to-gif-wasm",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.0.7",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "eslint": "8.6.0",
-    "eslint-config-next": "12.0.7"
-  }
+	"name": "video-convertor-wasm",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"type-check": "tsc --project tsconfig.json --pretty --noEmit",
+		"pretty": "prettier --write ."
+	},
+	"dependencies": {
+		"@ffmpeg/core": "^0.10.0",
+		"@ffmpeg/ffmpeg": "^0.10.1",
+		"next": "^12.0.7",
+		"nprogress": "^0.2.0",
+		"react": "17.0.2",
+		"react-dom": "17.0.2"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.38",
+		"autoprefixer": "^10.4.1",
+		"eslint": "8.6.0",
+		"eslint-config-next": "12.0.7",
+		"postcss": "^8.4.5",
+		"prettier": "^2.5.1",
+		"tailwindcss": "^3.0.11",
+		"typescript": "^4.5.4"
+	},
+	"prettier": {
+		"semi": false,
+		"trailingComma": "es5",
+		"singleQuote": true,
+		"printWidth": 100,
+		"tabWidth": 4,
+		"useTabs": true,
+		"endOfLine": "auto"
+	}
 }
