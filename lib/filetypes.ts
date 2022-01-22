@@ -1,0 +1,1 @@
+export const fileTypes = ['avi', 'flv', 'gif', 'mkv', 'mp4', 'webm']
